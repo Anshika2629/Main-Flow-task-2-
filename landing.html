@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+</head>
+<style>
+    * {
+        text-transform: capitalize;
+    }
+
+ 
+    .mySlides {
+        display: none;
+        /* margin: 100px auto; */
+        /* width: 50%; */
+    }
+
+    .pre {
+        margin: 250px 50px;
+        font-weight: bolder;
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text:2rem;
+    --head:calc(1rem + 5vw);
+    --bg-color:#eccc68
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+.rom{
+    min-height: 100vh;
+    background: linear-gradient(0deg, #0000009c, #0000009c),url('https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_282247995-scaled.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   z-index:2;
+   
+ 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: white;
+
+}
+
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+     margin-left: 3rem;
+     font-size: var(--text);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+.navbar ul li a:hover{
+    opacity: 0.8;
+    
+    
+
+}
+
+
+.pom{
+color: white;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+animation:slide 1s ease-in-out
+}
+
+
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(-0%);
+    }
+}
+
+.pom::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index:-1;
+    top: 0;
+    opacity: 0.6;
+
+}
+
+
+
+ .pom a{color: white;
+text-decoration: none;
+background-color:var(--bg-color) ;
+font-weight: 900;
+padding: 0.8rem 1rem;
+font-size: var(--text);
+margin: 0.8 auto;
+display: block;
+transition: opacity 0.1sec linear;
+}
+
+
+.pom a:hover{
+    opacity: 0.8;
+}
+.pom h2{
+    font-size: var(--head);
+}
+
+.pom p{
+    font-size: 3rem;
+}
+
+
+
+
+.explore {
+    word-spacing: 5px;
+    margin: 10px 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.back-photo {
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    padding:0.8rem;
+}
+
+.foot{
+    background-color:burlywood;
+   
+}
+
+
+
+
+ 
+   
+
+    .sample {
+        text-align: center;
+        margin: 50px 2px;
+        font-weight: bolder;
+        word-spacing: 10px;
+        font-size: 60px;
+    }
+
+  
+   
+
+    /* h2 {
+        font-weight: bolder;
+        word-spacing: 10px;
+        font-size: 60px;
+
+    } */
+
+   
+
+
+   
+ 
+
+    button:hover {
+        transform: scale(1.1);
+        transition: 0.6s all ease;
+        cursor: pointer;
+
+    }
+
+    .slide-show {
+        width: 70%;
+        /* padding: 10px auto; */
+        margin: 0px 180px;
+    }
+</style>
+
+<body>
+     <section class="rom">
+        <nav class="navbar">
+            <h2>Savor The Flavor</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+        <div class="pom">
+            <h2> The Ultimate Burger Experience!</h2>
+            <p>Introducing the burger that redefines flavor...</p>
+            <a href="#">Order Now</a>
+
+        </div>
+
+    </section>
+        <h2 class="sample">
+           Some Special Offers from us
+        </h2>
+        <div class="slideshow-container " style="display: flex;">
+            <div> <button class="pre" onclick="plusSlides(-1)">
+                     </button>
+            </div>
+            <div>
+                <div class="mySlides ">
+                    <img class="slide-show"
+                        src="https://i.pinimg.com/originals/4a/e1/64/4ae164951cdc26bdc6b1c073f1b384ec.jpg"
+                        alt="Random Image">
+                </div>
+                <div class="mySlides">
+                    <img class="slide-show"
+                        src="http://suryahotelsgroup.com/suryaKediri/pic/offers/promo_burger.jpg"
+                        alt="Image 2">
+                </div>
+                <div class="mySlides">
+                    <img class="slide-show"
+                        src="https://bk-ca-prd-01.s3.amazonaws.com/sites/burgerking.ca/files/04025-49-DIG-Fresh-Offer-Banner_768x805_EN_CR.jpg"
+                        alt="Image 2">
+                </div>
+            </div>
+            <div>
+                <button class="pre" onclick="plusSlides(1)">></button>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
+
+        <div class="text-white foot">
+            <h3 class=" text-center mt-5">Order Your Burger Now</h3>
+            <div class="row mx-4">
+                <div class="col-md-6 mt-4">
+                    <h6>
+                        Contact Information:
+                    </h6>
+                    <ul style="list-style: none;">
+    
+                        <li>
+    
+                            Phone number
+                        </li>
+                        <li>
+    
+                        Local address
+                    </li>
+                    <li>
+    
+                    Your Favourite Burger
+                    </li>
+                </ul>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p class="text-center">
+                        &copy;Burgers Platform|| Designed by <span>LP</span>|| all rights reserved
+                      </p>
+                      <p class="text-center ">
+                        visit our website: www.<span>LP</span>.com
+                      </p>
+                </div>
+            </div>
+        </div>
+    
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

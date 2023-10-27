@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        .container {
+            width: 50%;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 10px 10px 10px 10px;
+            margin: 30px auto;
+        }
+
+        .block {
+            margin: 30px 50px;
+        }
+
+        .display {
+            width: 100%;
+            padding: 4px;
+            border: none;
+            margin-top: 4px;
+            outline: none;
+            border-bottom: 2px solid grey;
+        }
+
+        label {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .button {
+            margin: 20px;
+            /* width: 100%; */
+        }
+
+        .sub {
+            width: 100%;
+            padding: 10px 0;
+            background-color:grey;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .sub:hover {
+            /* background-color: #4CAF50; Green */
+            background-color: white;
+        }
+        body{
+            background-image: linear-gradient(270deg, rgba(66, 128, 85, 0.7), #2c4caa99),  url('https://c.wallhere.com/photos/00/9e/artwork_minimalism_burgers-112867.jpg!d');
+        background-position: center;
+        
+        background-size: cover;
+        }
+        .home{
+            font-size: x-large;
+            color: blueviolet;
+            font-weight: bolder;
+           
+        }
+        .home:hover{
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <a href="landingpage.html" style=" text-decoration: none;"> </a>
+    </div>
+    <div class="container">
+
+        <h1 style="text-align: center; border-bottom:2px solid ;">
+            order your burger now
+        </h1>
+        <form >
+
+            <div class="block">
+                
+                <label for="">   full name :</label>
+                <input type="text" placeholder=" full name" class="display" required>
+            </div>
+            <div class="block">
+
+                <label for=""> e-mail:</label>
+                <input type="email" placeholder="e-mail" class="display" required>
+            </div>
+            <div class="block">
+                
+                <label for="">contact number:</label>
+                <input type="tel" placeholder="contact number" class="display" required>
+            </div>
+        <div class="block">
+            
+            <label for=""> address:</label>
+            <input type="address" placeholder="address" class="display" required >
+        </div>
+        <div class="block">
+            
+            <label for=""> select burger type :</label>
+            <select class="display">
+                <option>cheeseburger</option>
+                <option>chicken-burger</optionl>
+                    <option>Ham-burger</option>
+                    <option>veggie burger</option>
+                    <option>classic burger</option>
+                </select>
+            </div>
+            <div class="block">
+                
+                <label> burger size</label>
+                <select class="display">
+                    <option value="">regular </option>
+                    <option value=""> double</option>
+                    
+                </select>
+
+            </div>
+
+            <div class="block">
+            <label for="quantity">Quantity:</label>
+           
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+      
+    </div>
+            
+            <div class="button">
+            <button type="submit" class="sub" value="submit">order now</button>
+        </div>
+        
+    </form>
+</div>
+
+
+</body>
+
+</html>
